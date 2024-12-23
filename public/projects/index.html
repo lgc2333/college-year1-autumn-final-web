@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT_2333 - 项目展示</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/uno.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg"></div>
+    </div>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg-mask"></div>
+    </div>
+    <div class="overlay-full-absolute">
+      <div class="overlay-full-wrapper">
+        <div class="overlay-full loading-mask">
+          <div class="i-svg-spinners-eclipse"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-adaption">
+        <a class="logo" href="../index.html">
+          <img src="../assets/favicon.png" alt="Logo" />
+          <span>student_2333</span>
+        </a>
+        <a id="nav-menu">
+          <div class="i-ic-round-menu"></div>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <div class="i-ic-round-home"></div>
+              <span>首页</span>
+            </a>
+          </li>
+          <li>
+            <a href="../introduce.html">
+              <div class="i-ic-round-info"></div>
+              <span>简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="../hobbies.html">
+              <div class="i-ic-round-mood"></div>
+              <span>爱好</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <div class="i-ri-book-shelf-fill"></div>
+              <span>项目</span>
+            </a>
+          </li>
+          <li>
+            <a href="../contact.html">
+              <div class="i-ic-round-mail"></div>
+              <span>联系</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-1 flex-col items-center">
+      <article class="flex-1">
+        <header>
+          <div class="title">
+            <h1>
+              <div class="i-ri-book-shelf-fill"></div>
+              项目展示
+            </h1>
+          </div>
+        </header>
+
+        <section class="section-flex !gap-4">
+          <a class="picture-desc project-card" href="./bncm-6k-labs.html">
+            <img
+              class="picture"
+              src="../assets/projects/bncm-6k-labs/banner.png"
+              alt="6K Labs 插件效果展示"
+            />
+            <div class="desc">
+              <h2>BetterNCM 6K Labs</h2>
+              <p>
+                基于 6K Labs 的 BetterNCM 插件，可以把 Windows
+                网易云当前播放状态展示到一个 OBS 网页挂件中。
+              </p>
+            </div>
+          </a>
+        </section>
+      </article>
+    </main>
+  </body>
+
+  <script src="../third-party/medium-zoom.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT_2333 - 联系我</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/uno.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg"></div>
+    </div>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg-mask"></div>
+    </div>
+    <div class="overlay-full-absolute">
+      <div class="overlay-full-wrapper">
+        <div class="overlay-full loading-mask">
+          <div class="i-svg-spinners-eclipse"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-adaption">
+        <a class="logo" href="./index.html">
+          <img src="./assets/favicon.png" alt="Logo" />
+          <span>student_2333</span>
+        </a>
+        <a id="nav-menu">
+          <div class="i-ic-round-menu"></div>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <div class="i-ic-round-home"></div>
+              <span>首页</span>
+            </a>
+          </li>
+          <li>
+            <a href="./introduce.html">
+              <div class="i-ic-round-info"></div>
+              <span>简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="./hobbies.html">
+              <div class="i-ic-round-mood"></div>
+              <span>爱好</span>
+            </a>
+          </li>
+          <li>
+            <a href="./projects/index.html">
+              <div class="i-ri-book-shelf-fill"></div>
+              <span>项目</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <div class="i-ic-round-mail"></div>
+              <span>联系</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-1 flex-col items-center">
+      <article class="flex-1">
+        <header>
+          <div class="title">
+            <h1>
+              <div class="i-ic-round-mail"></div>
+              联系我
+            </h1>
+            <p>下面是我的一些联系方式与在其他平台的链接</p>
+          </div>
+        </header>
+
+        <section class="text-align-center section-flex">
+          <div class="flex flex-col gap-4">
+            <h2 class="m-0 p-0">联系方式</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a class="button" href="#" data-clipboard-text="lgc2333@126.com">
+                <div class="i-ic-round-mail"></div>
+                <span>E-mail: lgc2333@126.com</span>
+              </a>
+              <a class="button" href="#" data-clipboard-text="3076823485">
+                <div class="i-mdi-qqchat"></div>
+                <span>QQ: 3076823485</span>
+              </a>
+              <a class="button" href="#" data-clipboard-text="lgc0hair">
+                <div class="i-mdi-wechat"></div>
+                <span>WeChat: lgc0hair</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h2 class="m-0 p-0">其他平台</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a class="button" href="https://github.com/lgc2333" target="_blank">
+                <div class="i-mdi-github"></div>
+                <span>GitHub: lgc2333</span>
+              </a>
+              <a
+                class="button"
+                href="https://space.bilibili.com/257534706"
+                target="_blank"
+              >
+                <div class="i-ri-bilibili-fill"></div>
+                <span>bilibili: student_2333</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./third-party/floating-ui-core.js"></script>
+  <script src="./third-party/floating-ui-dom.js"></script>
+  <script src="./js/click-copy.js"></script>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT_2333 - 爱好展示</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/uno.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg"></div>
+    </div>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg-mask"></div>
+    </div>
+    <div class="overlay-full-absolute">
+      <div class="overlay-full-wrapper">
+        <div class="overlay-full loading-mask">
+          <div class="i-svg-spinners-eclipse"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-adaption">
+        <a class="logo" href="./index.html">
+          <img src="./assets/favicon.png" alt="Logo" />
+          <span>student_2333</span>
+        </a>
+        <a id="nav-menu">
+          <div class="i-ic-round-menu"></div>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html">
+              <div class="i-ic-round-home"></div>
+              <span>首页</span>
+            </a>
+          </li>
+          <li>
+            <a href="./introduce.html">
+              <div class="i-ic-round-info"></div>
+              <span>简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <div class="i-ic-round-mood"></div>
+              <span>爱好</span>
+            </a>
+          </li>
+          <li>
+            <a href="./projects/index.html">
+              <div class="i-ri-book-shelf-fill"></div>
+              <span>项目</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <div class="i-ic-round-mail"></div>
+              <span>联系</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-1 flex-col items-center">
+      <article class="flex-1">
+        <header>
+          <div class="title">
+            <h1>
+              <div class="i-ic-round-mood"></div>
+              爱好展示
+            </h1>
+          </div>
+        </header>
+
+        <section class="section-flex">
+          <div class="picture-desc">
+            <img
+              class="picture"
+              src="./assets/hobbies/chat-bot.png"
+              alt="指令式聊天机器人开发展示"
+              data-zoom
+            />
+            <div class="desc">
+              <h2>指令式聊天机器人开发</h2>
+              <!-- prettier-ignore -->
+              <p>我从初二口罩时期在家的时候开始就在做的事，一直到现在。那时还是用易语言开发，直到接触 Python 和 TypeScript 以后开始使用这些语言开发。</p>
+              <!-- prettier-ignore -->
+              <p>图片中展示的项目是 <a href="https://github.com/lgc-NB2Dev/nonebot-plugin-picstatus" target="_blank">nonebot-plugin-picstatus</a>。这是一个基于 <a href="https://nonebot.dev/" target="_blank">NoneBot2</a> 的插件，可以让机器人管理员便捷地以图形化方式查看机器人所在服务器的当前状态。</p>
+            </div>
+          </div>
+
+          <div class="picture-desc">
+            <img
+              class="picture"
+              src="./assets/hobbies/bds-plugin.png"
+              alt="Minecraft 基岩版服务端插件开发展示"
+              data-zoom
+            />
+            <div class="desc">
+              <h2>Minecraft 基岩版服务端插件开发</h2>
+              <!-- prettier-ignore -->
+              <p>高一学会 JavaScript 之后开始写这些插件的，由于不久前微软从服务端中去掉 PDB 的事件，加上开基岩版服务器逐渐淡出了我的兴趣范围，现在这些已经是半弃坑状态了。</p>
+              <!-- prettier-ignore -->
+              <p>图片中展示的项目是 <a href="https://github.com/lgc-LLDev/NBSPlayer" target="_blank">NBSPlayer</a>，可以在游戏内播放 <a href="https://opennbs.org/nbs" target="_blank">NBS 格式</a>（类似 MIDI）的音乐。</p>
+            </div>
+          </div>
+
+          <div class="picture-desc">
+            <img
+              class="picture"
+              src="./assets/hobbies/osu.png"
+              alt="osu! 游戏展示"
+              data-zoom
+            />
+            <div class="desc">
+              <h2>osu!</h2>
+              <!-- prettier-ignore -->
+              <p>只是一个<span class="text-gray"><span class="line-through">无聊的</span><span class="text-sm">（我不认为）</span></span>跟着音乐节奏的<span class="text-gray"><span class="line-through">简单</span><span class="text-sm">（并不简单）</span></span>的戳泡泡游戏。平时闲下来会玩玩这个。<span class="text-gray line-through">O 神，启动！</span></p>
+              <!-- prettier-ignore -->
+              <p><a href="https://osu.ppy.sh/users/24557481" target="_blank">我的 osu! 玩家主页</a> | <a href="https://www.bilibili.com/video/BV1RdqoYHEga" target="_blank">osu!std 3000PP 纪念视频</a></p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+  <script src="./third-party/medium-zoom.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>

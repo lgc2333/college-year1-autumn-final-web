@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT_2333 - 主页</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/uno.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body class="index">
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg"></div>
+    </div>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg-mask"></div>
+    </div>
+    <div class="overlay-full-absolute">
+      <div class="overlay-full-wrapper">
+        <div class="overlay-full loading-mask">
+          <div class="i-svg-spinners-eclipse"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-adaption">
+        <a class="logo" href="#">
+          <img src="./assets/favicon.png" alt="Logo" />
+          <span>student_2333</span>
+        </a>
+        <a id="nav-menu">
+          <div class="i-ic-round-menu"></div>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <div class="i-ic-round-home"></div>
+              <span>首页</span>
+            </a>
+          </li>
+          <li>
+            <a href="./introduce.html">
+              <div class="i-ic-round-info"></div>
+              <span>简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="./hobbies.html">
+              <div class="i-ic-round-mood"></div>
+              <span>爱好</span>
+            </a>
+          </li>
+          <li>
+            <a href="./projects/index.html">
+              <div class="i-ri-book-shelf-fill"></div>
+              <span>项目</span>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html">
+              <div class="i-ic-round-mail"></div>
+              <span>联系</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="m-4 flex flex-1 flex-col items-center justify-center gap-8 lg:flex-row
+        lg:gap-16"
+    >
+      <div
+        class="border-light rd-full border-op-80 bg-light bg-op-10 hover:shadow-light
+          hover:shadow-op-30 hover:border-op-100 hover:scale-101 border-3 box-border
+          flex w-52 border-solid transition-all duration-1000 ease-in-out
+          hover:shadow-[0px_0px_3em] sm:w-64 sm:border-4 lg:w-80"
+      >
+        <img
+          id="avatar"
+          class="rd-inherit w-full select-none"
+          src="./assets/favicon.png"
+          alt="Avatar"
+        />
+      </div>
+
+      <div class="flex flex-col items-center gap-6 lg:items-start">
+        <h1 class="text-shadow-md m-0 p-0 text-4xl sm:text-6xl">STUDENT_2333</h1>
+        <p class="text-shadow-md m-0 p-0 text-xl sm:text-3xl">你好，世界👋</p>
+
+        <div
+          class="m-0 flex flex-wrap justify-center gap-2 p-0 text-lg sm:gap-4
+            sm:text-2xl"
+        >
+          <a class="button index" href="./introduce.html">
+            <div class="i-ic-round-info"></div>
+            <span>简介</span>
+          </a>
+          <a class="button index" href="./hobbies.html">
+            <div class="i-ic-round-mood"></div>
+            <span>爱好</span>
+          </a>
+          <a class="button index" href="./projects/index.html">
+            <div class="i-ri-book-shelf-fill"></div>
+            <span>项目</span>
+          </a>
+          <a class="button index" href="./contact.html">
+            <div class="i-ic-round-mail"></div>
+            <span>联系</span>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDENT_2333 - 项目展示 - A</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/uno.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg"></div>
+    </div>
+    <div class="overlay-full-wrapper">
+      <div class="overlay-full bg-mask"></div>
+    </div>
+    <div class="overlay-full-absolute">
+      <div class="overlay-full-wrapper">
+        <div class="overlay-full loading-mask">
+          <div class="i-svg-spinners-eclipse"></div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="mobile-adaption">
+        <a class="logo" href="../index.html">
+          <img src="../assets/favicon.png" alt="Logo" />
+          <span>student_2333</span>
+        </a>
+        <a id="nav-menu">
+          <div class="i-ic-round-menu"></div>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <div class="i-ic-round-home"></div>
+              <span>首页</span>
+            </a>
+          </li>
+          <li>
+            <a href="../introduce.html">
+              <div class="i-ic-round-info"></div>
+              <span>简介</span>
+            </a>
+          </li>
+          <li>
+            <a href="../hobbies.html">
+              <div class="i-ic-round-mood"></div>
+              <span>爱好</span>
+            </a>
+          </li>
+          <li>
+            <a href="./index.html" class="active">
+              <div class="i-ri-book-shelf-fill"></div>
+              <span>项目</span>
+            </a>
+          </li>
+          <li>
+            <a href="../contact.html">
+              <div class="i-ic-round-mail"></div>
+              <span>联系</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-1 flex-col items-center">
+      <article class="flex-1">
+        <header class="with-bg">
+          <div class="header-bg-wrapper">
+            <div class="bg-[url('../assets/projects/bncm-6k-labs/banner.png')]"></div>
+            <div class="bg-mask"></div>
+          </div>
+          <div class="header-body">
+            <div class="bread-crumb">
+              <a href="./index.html">
+                <div class="i-ri-book-shelf-fill"></div>
+                <span>项目</span>
+              </a>
+              <div>&gt;</div>
+              <a href="#">
+                <span>BetterNCM 6K Labs</span>
+              </a>
+            </div>
+            <div class="title">
+              <h1>BetterNCM 6K Labs</h1>
+              <p>网易云播放状态 OBS 直播挂件</p>
+            </div>
+          </div>
+        </header>
+
+        <section class="section-article">
+          <!-- prettier-ignore -->
+          <p>项目开源地址：<a href="https://github.com/lgc2333/BetterNCM-6K-Labs" target="_blank">lgc2333/BetterNCM-6K-Labs</a></p>
+          <!-- prettier-ignore -->
+          <p>本项目受 <a href="https://github.com/Widdit/now-playing-service" target="_blank">Widdit/now-playing-service</a> 启发而开发。该项目获取音乐软件当前播放信息的方式不太好，只能说是无奈中的取舍。由于我平时用网易云用得多，又正好在使用 <a href="https://github.com/std-microblock/BetterNCM" target="_blank">BetterNCM</a>，借助它，我可以从网易云中获取到更详细的播放中曲目信息，从而萌生想法开发了这个小项目。</p>
+          <!-- prettier-ignore -->
+          <p>通常，BetterNCM 插件会注入到网易云的前端进程中。所以本插件通过 DOM 操作以及 BetterNCM 提供的相关 API 来实现播放信息的获取。</p>
+          <div class="img-with-desc center">
+            <img
+              src="../assets/projects/bncm-6k-labs/dom-op-code.png"
+              alt="DOM 操作相关代码展示"
+              data-zoom
+            />
+            <p class="text-gray mb-0 text-center text-sm">DOM 操作代码展示</p>
+          </div>
+          <!-- prettier-ignore -->
+          <p>本插件对接 6K Labs 的 Amuse 挂件实现信息展示。挂件的 YouTube Music 信息获取方式会以 HTTP 方式轮询调用 <code>localhost</code> 下一个特定的地址，但由于原生前端无法启动 HTTP 服务器，且 BetterNCM 也没有给插件提供开 HTTP 服务器的 API，我想了一个歪路子。</p>
+          <!-- prettier-ignore -->
+          <p><span class="line-through">我用 Go 编写了</span><span class="text-gray text-sm">（我不会写 Go，GitHub Copilot 全盘帮我写的 QAQ）</span>一个后端程序来启动一个 HTTP 服务器，这个后端服务器提供挂件需要的 API 的同时，本插件会与服务器建立一个 WebSocket 连接。当挂件请求后端服务器的 API 时，后端服务器会通过 WebSocket 连接向插件发出请求，插件获取当前播放状态后发送回去，最终后端服务器将发回的数据提供给挂件。</p>
+          <div
+            class="flex flex-wrap items-center justify-center gap-4 md:grid
+              md:grid-cols-2"
+          >
+            <div class="img-with-desc center">
+              <img
+                src="../assets/projects/bncm-6k-labs/backend-code.png"
+                alt="后端服务器相关代码展示"
+                data-zoom
+              />
+              <p class="text-gray mb-0 text-center text-sm">后端服务器相关代码展示</p>
+            </div>
+            <div class="img-with-desc center">
+              <img
+                src="../assets/projects/bncm-6k-labs/service-code.png"
+                alt="前端被调用相关代码展示"
+                data-zoom
+              />
+              <p class="text-gray mb-0 text-center text-sm">前端被调用相关代码展示</p>
+            </div>
+          </div>
+          <!-- prettier-ignore -->
+          <p>你只需要在 BetterNCM 的插件市场中下载本插件就可以开始愉快的使用了。</p>
+          <div
+            class="flex flex-wrap items-center justify-center gap-4 md:grid
+              md:grid-cols-2"
+          >
+            <div class="img-with-desc center">
+              <img
+                src="../assets/projects/bncm-6k-labs/plugin-settings.png"
+                alt="插件设置与使用方法展示"
+                data-zoom
+              />
+              <p class="text-gray mb-0 text-center text-sm">插件设置与使用方法展示</p>
+            </div>
+            <div class="img-with-desc center">
+              <img
+                src="../assets/projects/bncm-6k-labs/banner.png"
+                alt="挂件效果展示"
+                data-zoom
+              />
+              <p class="text-gray mb-0 text-center text-sm">挂件效果展示</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+
+  <script src="../third-party/medium-zoom.min.js"></script>
+  <script src="../js/main.js"></script>
+</html>

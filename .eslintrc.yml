@@ -1,0 +1,55 @@
+root: true
+
+env:
+  es2020: true
+
+ignorePatterns:
+  - 'node_modules/'
+  - '.yarn/'
+  - 'third-party/'
+
+overrides:
+  - files: '*.{js,jsx,ts,tsx}'
+    parser: '@typescript-eslint/parser'
+    extends: '@cordisjs/eslint-config'
+    rules:
+      no-plusplus:
+        - error
+        - allowForLoopAfterthoughts: true
+
+      indent: off
+      sort-imports: off
+      space-in-parens: off
+      operator-linebreak: off
+      lines-between-class-members:
+        - error
+        - enforce:
+            - blankLine: always
+              prev: '*'
+              next: method
+
+      no-console: off
+
+  - files: '*.html'
+    parser: '@html-eslint/parser'
+    plugins:
+      - '@html-eslint'
+    extends:
+      - 'plugin:@html-eslint/recommended'
+      # - 'plugin:@unocss/recommended'
+    rules:
+      '@html-eslint/require-closing-tags':
+        - error
+        - selfClosing: always
+      '@html-eslint/no-extra-spacing-text': error
+      '@html-eslint/no-script-style-type': error
+      '@html-eslint/attrs-newline': off
+      # '@html-eslint/indent':
+      #   - error
+      #   - 2
+      '@html-eslint/indent': off
+      '@html-eslint/lowercase': error
+      '@html-eslint/no-extra-spacing-attrs':
+        - error
+        - enforceBeforeSelfClose: true
+      '@html-eslint/no-trailing-spaces': error

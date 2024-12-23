@@ -1,0 +1,40 @@
+{
+  "name": "final-1",
+  "packageManager": "yarn@4.5.3",
+  "private": true,
+  "version": "0",
+  "scripts": {
+    "build:css": "unocss public/**/*.html",
+    "dev:css": "unocss public/**/*.html --watch",
+    "build": "yarn build:css",
+    "dev": "yarn dev:css",
+    "serve:dev": "browser-sync public -w --port 18800 --ui-port 18801 --no-open --host 0.0.0.0",
+    "serve": "http-server public -p 18800"
+  },
+  "devDependencies": {
+    "@cordisjs/eslint-config": "^1.1.1",
+    "@floating-ui/core": "^1.6.8",
+    "@floating-ui/dom": "^1.6.12",
+    "@html-eslint/eslint-plugin": "^0.31.1",
+    "@html-eslint/parser": "^0.31.0",
+    "@iconify-json/ic": "^1.2.2",
+    "@iconify-json/mdi": "^1.2.2",
+    "@iconify-json/ri": "^1.2.5",
+    "@iconify-json/svg-spinners": "^1.2.2",
+    "@unocss/cli": "^0.65.2",
+    "@unocss/eslint-plugin": "^0.65.2",
+    "@unocss/preset-icons": "^0.65.2",
+    "browser-sync": "^3.0.3",
+    "eslint": "^8.57.1",
+    "http-server": "^14.1.1",
+    "medium-zoom": "^1.1.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-classnames": "^0.7.5",
+    "prettier-plugin-merge": "^0.7.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "simplebar": "^6.3.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "unocss": "^0.65.2"
+  }
+}
